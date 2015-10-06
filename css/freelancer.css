@@ -1,0 +1,51 @@
+/* Inserta tu código aqui */
+/*css del home-freelance*/
+.portfolio{
+	text-align: center;
+}
+.photo:hover{
+  background-color: #00CCa3;
+	background-image:url(../img/zoom.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: relative;
+}
+.photo:hover img {
+  opacity: 10;
+  filter: alpha(opacity=4000);
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+}
+.portfolio .bar,
+.contact .bar{
+	border: 2px solid #2c3e50;
+}
+.about,.modal-content{
+	background-color:  #00CCa3;
+	color: #fff;
+}
+.about button{
+	color: #2c3e50;
+	border: 1px solid #fff;
+	background-color: #00CCa3;
+}
+.about button:hover{
+	color: #2c3e50;
+	background-color: #fff;
+}
+/*css del about-freelance*/
+.title img{
+	width: 10%;
+}
+/*css del blog-freelance*/
+article h2{
+	padding-left: 12px;
+	color: #00CCa3;
+}
+article nav{
+	padding-left: 12px;
+}
