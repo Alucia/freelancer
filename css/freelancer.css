@@ -3,8 +3,8 @@
 .portfolio{
 	text-align: center;
 }
-.photo:hover{
-  background-color: #00CCa3;
+.thumbnail:hover{
+	background-color: #00CCa3 !important;
 	background-image:url(../img/zoom.png);
 	background-repeat:no-repeat;
 	background-position:center;
@@ -14,7 +14,7 @@
 	right: 0;
 	position: relative;
 }
-.photo:hover img {
+.thumbnail:hover img {
   opacity: 10;
   filter: alpha(opacity=4000);
   opacity: 0.1;
