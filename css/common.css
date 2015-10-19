@@ -180,3 +180,17 @@ footer{
 		padding-top: 50px;
 	}
 }
+
+.scrollup{
+    width: 40px;
+    height: 40px;
+    opacity:0.9;
+    position:fixed;
+    bottom:3%;
+    right:4%;
+    display:none;
+    text-indent:-9999px;
+    background: url("../img/up.png")center no-repeat;
+    background-size: 70%;
+    background-color: #00CCa3;
+}

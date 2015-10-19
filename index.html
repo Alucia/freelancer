@@ -15,14 +15,30 @@
       <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <link href="js/fancybox/jquery.fancybox.css" rel="stylesheet" />
       <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){       
+          $(window).scroll(function(){
+            if ($(this).scrollTop() > 1000) {
+              $('.scrollup').fadeIn();
+            } else {
+              $('.scrollup').fadeOut();
+            }
+          }); 
+          
+          $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 1200);
+            return false;
+          });
+   
+        });
+      </script>
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-
   </head>
   <body>
     <!-- Inserta tu código aqui -->
@@ -243,6 +259,7 @@
         </div>
       </div>
     </section>
+    <a href="#" class="scrollup"></a>
     <footer class="text-center">
       Copyright &copy; Your Website 2015.
     </footer>
@@ -253,13 +270,19 @@
     <script src="js/freelancer.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/modal.js"></script>
-  <script>
-      //custom select box
+    <script>
+        //custom select box
 
-      $(function(){
-          $("select.styled").customSelect();
-      });
+        $(function(){
+            $("select.styled").customSelect();
+        });
 
-  </script>
+    </script>
+    <script type="text/javascript">
+        // Highlight the top nav as scrolling occurs
+        $('body').scrollspy({
+          target: '.navbar-fixed-top'
+        })
+    </script>
   </body>
 </html>
