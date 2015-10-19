@@ -183,10 +183,10 @@ footer{
 
 .scrollup{
     width: 40px;
-    height: 40px;
+    height: 35px;
     opacity:0.9;
     position:fixed;
-    bottom:3%;
+    bottom:1%;
     right:4%;
     display:none;
     text-indent:-9999px;
